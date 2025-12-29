@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nara | Artist</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,700&family=Manrope:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <header class="hero" id="top">
+        <div class="hero__glow"></div>
+        <div class="hero__petals" aria-hidden="true">
+          <span data-depth="6"></span>
+          <span data-depth="12"></span>
+          <span data-depth="18"></span>
+          <span data-depth="9"></span>
+          <span data-depth="14"></span>
+        </div>
+        <nav class="nav">
+          <div class="nav__logo">Nara</div>
+          <div class="nav__links">
+            <a href="#works">Works</a>
+            <a href="#story">Story</a>
+            <a href="#about">About</a>
+            <a href="#notes">Notes</a>
+            <a href="#people">People</a>
+          </div>
+        </nav>
+        <div class="hero__content">
+          <div class="hero__text">
+            <p class="eyebrow">Nara, 17 - quick laughs, big ideas</p>
+            <h1>
+              Soft petals, bold color.<br />
+              A sketchbook made into a <span class="italic">garden</span>.
+            </h1>
+            <p class="lead">
+              The kind of person who answers in voice notes and sketches on receipts.
+              Nara paints the in-between: sunlit terraces, the scent of sampaguita, and
+              late-night studio light. Her work blends Filipino warmth and Italian romance
+              into dreamy, layered compositions.
+            </p>
+            <p class="signature">- Nara</p>
+            <div class="hero__cta">
+              <a class="btn btn--primary" href="#works">See the art</a>
+            </div>
+            <div class="vibes" aria-label="Nara's vibe board">
+              <p class="vibes__label">Tap a vibe to hear her voice</p>
+              <div class="vibes__buttons" role="list">
+                <button class="vibe-btn" type="button" data-vibe="I laugh first, explain later.">Loud laugh</button>
+                <button class="vibe-btn" type="button" data-vibe="Every playlist has a storyline.">Playlist architect</button>
+                <button class="vibe-btn" type="button" data-vibe="Caught between tabs and sketchbook pages.">Always online</button>
+                <button class="vibe-btn" type="button" data-vibe="Daydreaming in color; reality can wait.">Glitchy daydreamer</button>
+                <button class="vibe-btn vibe-btn--shuffle" type="button" data-action="shuffle">Surprise me</button>
+              </div>
+              <p class="vibes__output" id="vibe-output">Tap one to hear it from me.</p>
+            </div>
+          </div>
+          <div class="hero__art">
+          <div class="frame">
+            <div class="canvas">
+                <svg viewBox="0 0 420 520" role="img" aria-label="Abstract floral artwork">
+                  <defs>
+                    <linearGradient id="petal" x1="0" x2="1">
+                      <stop offset="0" stop-color="#f7c7c7" />
+                      <stop offset="1" stop-color="#f3a2b2" />
+                    </linearGradient>
+                    <linearGradient id="sun" x1="0" x2="1">
+                      <stop offset="0" stop-color="#f7df8b" />
+                      <stop offset="1" stop-color="#f1b46a" />
+                    </linearGradient>
+                  </defs>
+                  <rect width="420" height="520" fill="#f9f2ea" />
+                  <circle cx="320" cy="120" r="90" fill="url(#sun)" opacity="0.85" />
+                  <path
+                    d="M120 150 C70 180, 60 240, 120 280 C180 320, 260 300, 260 240 C260 180, 190 120, 120 150 Z"
+                    fill="url(#petal)"
+                    opacity="0.9"
+                  />
+                  <path
+                    d="M140 260 C90 300, 90 370, 160 400 C230 430, 300 390, 300 330 C300 270, 220 230, 140 260 Z"
+                    fill="#f5bfc8"
+                    opacity="0.85"
+                  />
+                  <path
+                    d="M80 330 C60 380, 100 440, 170 450 C240 460, 300 420, 310 370 C320 320, 250 290, 180 300 Z"
+                    fill="#e8b38f"
+                    opacity="0.75"
+                  />
+                  <circle cx="210" cy="280" r="38" fill="#f6e4be" />
+                </svg>
+              </div>
+              <div class="frame__label">"Petals of Luzon"</div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="divider divider--top" aria-hidden="true"></div>
+      <section class="works" id="works">
+        <div class="section__title">
+          <h2>Selected Works</h2>
+          <p>Small worlds where watercolor meets sun-drenched memory.</p>
+        </div>
+        <div class="grid" id="art-grid" data-src="art-items.html">
+          <!-- Cards load from art-items.html so you can add more without editing this file. -->
+        </div>
+      </section>
+
+      <div class="divider divider--line" aria-hidden="true"></div>
+      <section class="story" id="story">
+        <div class="story__text">
+          <h2>Her Story</h2>
+          <p>
+            Nara is 17, the friend who narrates everything, with a sketchbook in every
+            bag. She grew up between Filipino family gatherings and Italian summers, and
+            carries both rhythms into her painting.
+          </p>
+          <p>
+            She loves botanical references, terrazzo textures, and handwritten
+            notes taped over fresh paint. Each piece is a small diary page.
+          </p>
+          <p class="story__quote">
+            “Art is my way of keeping memories in bloom.”
+          </p>
+        </div>
+        <div class="story__panel">
+          <div class="panel__item">
+            <span class="panel__label">Mediums</span>
+            <p>Watercolor, ink, pastel, collage</p>
+          </div>
+          <div class="panel__item">
+            <span class="panel__label">Favorites</span>
+            <p>Terraces, florals, golden hour light</p>
+          </div>
+          <div class="panel__item">
+            <span class="panel__label">Currently</span>
+            <p>Building a new series and collecting sounds for it</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="section__title">
+          <h2>About Me</h2>
+          <p>A little peek behind the paintings.</p>
+        </div>
+        <div class="about__card about__card--contrast">
+          <p>
+            I am Nara, 17. I talk fast, think faster, and put that energy into
+            everything I make. Music is my compass.
+          </p>
+        </div>
+      </section>
+
+      <div class="divider divider--line" aria-hidden="true"></div>
+      <section class="notes" id="notes">
+        <div class="section__title">
+          <h2>Studio Notes</h2>
+          <p>Whispers, colors, and small rituals behind the work.</p>
+        </div>
+        <div class="notes__grid">
+          <div class="note">
+            <h3>Soundtrack keeper</h3>
+            <p>Every moment has a song, every sketch has a tempo.</p>
+          </div>
+          <div class="note">
+            <h3>Night owl mode</h3>
+            <p>Lights low, paints out, ideas louder than sleep.</p>
+          </div>
+          <div class="note">
+            <h3>Soft chaos</h3>
+            <p>Glitter pens, sticky notes, and a brain three scenes ahead.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="people" id="people">
+        <div class="section__title">
+          <h2>Her Circle</h2>
+          <p>Coins is the bestest friend. Yuan is her brother. Daron and Julia keep the ideas loud. The rest keep the orbit warm.</p>
+        </div>
+        <div class="notes__grid people__grid">
+          <div class="note note--best" data-role="best-friend" data-energy="1" data-trait="Chaos translator and late-night hype." role="button" tabindex="0" aria-pressed="false">
+            <div class="note__inner">
+              <div class="note__front">
+                <h3>Coins</h3>
+                <p>Bestest friend. Chaos translator &amp; late-night hype.</p>
+                <span class="note__hint">Click to flip</span>
+              </div>
+              <div class="note__back">
+                <p class="note__quote">“I talk her down, then turn the volume back up.”</p>
+                <p class="note__role">Best friend energy. Loud laugh, softer heart.</p>
+              </div>
+            </div>
+          </div>
+          <div class="note note--side" data-role="just-there" data-energy="99" data-trait="Quietly vibing with the group." role="button" tabindex="0" aria-pressed="false">
+            <div class="note__inner">
+              <div class="note__front">
+                <h3>Jefin</h3>
+                <p>Just there, quietly vibing with the group.</p>
+                <span class="note__hint">Click to flip</span>
+              </div>
+              <div class="note__back">
+                <p class="note__quote">“I’m not loud, but I’m always listening.”</p>
+                <p class="note__role">The steady one who catches every detail.</p>
+              </div>
+            </div>
+          </div>
+          <div class="note note--side" data-role="just-there" data-energy="68" data-trait="Steady anchor and detail checker." role="button" tabindex="0" aria-pressed="false">
+            <div class="note__inner">
+              <div class="note__front">
+                <h3>Aldrine</h3>
+                <p>Just there, keeping things steady.</p>
+                <span class="note__hint">Click to flip</span>
+              </div>
+              <div class="note__back">
+                <p class="note__quote">“Someone has to keep us on the map.”</p>
+                <p class="note__role">Anchor energy. Calm, reliable, precise.</p>
+              </div>
+            </div>
+          </div>
+          <div class="note note--brother" data-role="brother" data-energy="100" data-trait="Protective, steady, quietly proud." role="button" tabindex="0" aria-pressed="false">
+            <div class="note__inner">
+              <div class="note__front">
+                <h3>Yuan <span class="crown" aria-hidden="true"></span></h3>
+                <p>Brother. Lowkey protective, always around.</p>
+                <span class="note__hint">Click to flip</span>
+              </div>
+              <div class="note__back">
+                <p class="note__quote">“She’s my sister. That’s the whole story.”</p>
+                <p class="note__role">Big brother energy. Quietly proud.</p>
+              </div>
+            </div>
+          </div>
+          <div class="note note--friend" data-role="friend" data-energy="84" data-trait="Idea spark and playlist curator." role="button" tabindex="0" aria-pressed="false">
+            <div class="note__inner">
+              <div class="note__front">
+                <h3>Daron</h3>
+                <p>Friend. Idea spark, playlist curator, quick to hype.</p>
+                <span class="note__hint">Click to flip</span>
+              </div>
+              <div class="note__back">
+                <p class="note__quote">“Send the sketch. I’ll send the song.”</p>
+                <p class="note__role">Ride-or-die creative energy.</p>
+              </div>
+            </div>
+          </div>
+          <div class="note note--friend" data-role="friend" data-energy="88" data-trait="Soft-spoken, fearless with color." role="button" tabindex="0" aria-pressed="false">
+            <div class="note__inner">
+              <div class="note__front">
+                <h3>Julia</h3>
+                <p>Friend. Soft-spoken, fearless with color.</p>
+                <span class="note__hint">Click to flip</span>
+              </div>
+              <div class="note__back">
+                <p class="note__quote">“Soft doesn’t mean small.”</p>
+                <p class="note__role">Bold color, gentle voice.</p>
+              </div>
+            </div>
+          </div>
+          <div class="note note--side" data-role="just-there" data-energy="58" data-trait="Always around, keeps the orbit warm." role="button" tabindex="0" aria-pressed="false">
+            <div class="note__inner">
+              <div class="note__front">
+                <h3>Alona</h3>
+                <p>Just there, always around.</p>
+                <span class="note__hint">Click to flip</span>
+              </div>
+              <div class="note__back">
+                <p class="note__quote">“I show up. That’s my love language.”</p>
+                <p class="note__role">Warm orbit energy. Always present.</p>
+              </div>
+            </div>
+          </div>
+          <div class="note note--best note--bestie" data-role="best-friend" data-energy="90" data-trait="Bestest friend for life, gentle and loyal." role="button" tabindex="0" aria-pressed="false">
+            <div class="note__inner">
+              <div class="note__front">
+                <h3>Janine <span class="rose" aria-hidden="true"></span></h3>
+                <p>Bestest friend for life. Gentle, loyal, and always cheering.</p>
+                <span class="note__hint">Click to flip</span>
+              </div>
+              <div class="note__back">
+                <p class="note__quote">“I’m here, even when the world is loud.”</p>
+                <p class="note__role">Bestest friend for life. Rose-petal calm.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="circle-meter" aria-live="polite">
+          <div class="circle-meter__track" id="circle-meter-track">
+            <span class="circle-meter__fill" id="circle-meter-fill"></span>
+            <span class="circle-meter__value" id="circle-meter-value">40%</span>
+          </div>
+          <p class="circle-meter__text" id="circle-meter-text">Tap a card to see their energy.</p>
+        </div>
+        <p class="people__hint" id="people-hint">Tap a card to flip it and spotlight their energy.</p>
+        <div class="moment-board">
+          <p class="moment-board__label">Circle moments (no filters)</p>
+          <div class="moment-board__buttons" role="list">
+            <button class="moment-btn" type="button" data-moment="After school, matcha in hand, racing the sunset to finish a sketch.">Sketch run</button>
+            <button class="moment-btn" type="button" data-moment="Golden hour terrace photos, everyone yelling “one more” from behind the camera.">Golden hour terrace</button>
+            <button class="moment-btn" type="button" data-moment="Midnight convenience store snacks and doodles on the receipt.">Midnight snack run</button>
+            <button class="moment-btn moment-btn--shuffle" type="button" data-action="shuffle">Random memory</button>
+          </div>
+          <p class="moment-board__output" id="moment-output">Pick a moment and it plays in your head.</p>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>Artwork and words by Nara. Made with care and late-night paint stains.</p>
+      </footer>
+    </div>
+    <template id="art-fallback">
+      <article class="card card--photo" data-number="I" tabindex="0">
+        <div class="card__art">
+          <img src="Images/1.jpg" alt="A knight rendered in Nara's style" loading="lazy" />
+        </div>
+        <div class="card__body">
+          <h3>The Quiet Knight</h3>
+          <p>A silent guardian watches over a forgotten garden, armor softened by lavender light.</p>
+        </div>
+      </article>
+      <article class="card card--photo" data-number="II" tabindex="0">
+        <div class="card__art">
+          <img src="Images/2.jpg" alt="An angel with flowing wings" loading="lazy" />
+        </div>
+        <div class="card__body">
+          <h3>Angel of Dawn</h3>
+          <p>An angel descends at sunrise, carrying calm and a hush of violets.</p>
+        </div>
+      </article>
+    </template>
+    <script>
+      const artGrid = document.getElementById("art-grid");
+      const artSource = artGrid?.dataset?.src;
+      if (artGrid && artSource) {
+        fetch(artSource)
+          .then((response) => response.text())
+          .then((markup) => {
+            artGrid.innerHTML = markup;
+          })
+          .catch(() => {
+            const fallback = document.getElementById("art-fallback");
+            artGrid.innerHTML = fallback ? fallback.innerHTML : "";
+          });
+      }
+      const toggleReveal = (card) => {
+        card.classList.toggle("is-revealed");
+      };
+      document.addEventListener("click", (event) => {
+        const card = event.target.closest(".card--photo");
+        if (card) {
+          toggleReveal(card);
+        }
+      });
+      document.addEventListener("keydown", (event) => {
+        if (event.key !== "Enter" && event.key !== " ") {
+          return;
+        }
+        const card = event.target.closest(".card--photo");
+        if (card) {
+          event.preventDefault();
+          toggleReveal(card);
+        }
+      });
+      const petals = Array.from(document.querySelectorAll(".hero__petals span"));
+      let pointerX = 0;
+      let pointerY = 0;
+      let targetX = 0;
+      let targetY = 0;
+      const updatePetals = () => {
+        targetX += (pointerX - targetX) * 0.08;
+        targetY += (pointerY - targetY) * 0.08;
+        petals.forEach((petal) => {
+          const depth = Number(petal.dataset.depth || 8);
+          const moveX = targetX / depth;
+          const moveY = targetY / depth;
+          petal.style.transform = `translate(${moveX}px, ${moveY}px)`;
+        });
+        requestAnimationFrame(updatePetals);
+      };
+      window.addEventListener("mousemove", (event) => {
+        pointerX = (event.clientX - window.innerWidth / 2) / 10;
+        pointerY = (event.clientY - window.innerHeight / 2) / 12;
+      });
+      window.addEventListener("scroll", () => {
+        pointerY = window.scrollY / 8;
+      });
+      updatePetals();
+
+      const vibeButtons = Array.from(document.querySelectorAll(".vibe-btn"));
+      const vibeChoices = vibeButtons.filter((button) => !button.dataset.action);
+      const vibeOutput = document.getElementById("vibe-output");
+      const setVibe = (button) => {
+        vibeButtons.forEach((btn) => btn.classList.remove("is-active"));
+        button.classList.add("is-active");
+        if (vibeOutput) {
+          vibeOutput.textContent = button.dataset.vibe || "";
+        }
+      };
+      vibeButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          if (button.dataset.action === "shuffle") {
+            const pick = vibeChoices[Math.floor(Math.random() * vibeChoices.length)];
+            if (pick) {
+              setVibe(pick);
+            }
+            return;
+          }
+          setVibe(button);
+        });
+      });
+
+      const peopleCards = Array.from(document.querySelectorAll(".people__grid .note"));
+      const peopleHint = document.getElementById("people-hint");
+      const meterFill = document.getElementById("circle-meter-fill");
+      const meterText = document.getElementById("circle-meter-text");
+      const meterTrack = document.getElementById("circle-meter-track");
+      const meterValue = document.getElementById("circle-meter-value");
+      const spotlightPerson = (card) => {
+        const wasActive = card.classList.contains("is-spotlight");
+        peopleCards.forEach((item) => {
+          item.classList.remove("is-spotlight");
+          item.classList.remove("is-flipped");
+          item.setAttribute("aria-pressed", "false");
+        });
+        if (wasActive) {
+          if (peopleHint) {
+            peopleHint.textContent = "Tap a card to flip it and spotlight their energy.";
+          }
+          if (meterFill && meterText) {
+            meterFill.style.width = "40%";
+            meterFill.style.setProperty("--energy-hue", "46");
+            if (meterTrack) {
+              meterTrack.style.setProperty("--energy-hue", "46");
+            }
+            if (meterTrack) {
+              meterTrack.style.setProperty("--energy", "40");
+            }
+            if (meterValue) {
+              meterValue.textContent = "40%";
+            }
+            meterText.textContent = "Tap a card to see their energy.";
+          }
+          return;
+        }
+        card.classList.add("is-spotlight");
+        card.classList.add("is-flipped");
+        card.setAttribute("aria-pressed", "true");
+        if (peopleHint) {
+          const role = card.dataset.role || "just-there";
+          const rawName = card.querySelector("h3")?.textContent || "They";
+          const name = rawName.replace(/\s+/g, " ").trim();
+          const trait = card.dataset.trait || "";
+          if (role === "best-friend") {
+            peopleHint.textContent = `${name} is the bestest friend. ${trait}`;
+          } else if (role === "bestie") {
+            peopleHint.textContent = `${name} is a bestie for life. ${trait}`;
+          } else if (role === "brother") {
+            peopleHint.textContent = `${name} is her brother. ${trait}`;
+          } else if (role === "friend") {
+            peopleHint.textContent = `${name} is a ride-or-die friend. ${trait}`;
+          } else {
+            peopleHint.textContent = `${name} is part of the orbit. ${trait}`;
+          }
+        }
+        if (meterFill && meterText) {
+          const energy = Number(card.dataset.energy || 60);
+          const clamped = Math.max(1, Math.min(100, energy));
+          meterFill.style.width = `${clamped}%`;
+          const hue = Math.round(20 + clamped * 1.6);
+          meterFill.style.setProperty("--energy-hue", hue);
+          if (meterTrack) {
+            meterTrack.style.setProperty("--energy-hue", hue);
+          }
+          const meterName = card.querySelector("h3")?.textContent?.replace(/\s+/g, " ").trim() || "They";
+          meterText.textContent = `${meterName} energy: ${clamped}%.`;
+          if (meterTrack) {
+            meterTrack.style.setProperty("--energy", clamped);
+          }
+          if (meterValue) {
+            meterValue.textContent = `${clamped}%`;
+          }
+        }
+      };
+      peopleCards.forEach((card) => {
+        card.addEventListener("click", () => spotlightPerson(card));
+        card.addEventListener("keydown", (event) => {
+          if (event.key !== "Enter" && event.key !== " ") {
+            return;
+          }
+          event.preventDefault();
+          spotlightPerson(card);
+        });
+      });
+      if (peopleCards[0]) {
+        spotlightPerson(peopleCards[0]);
+      }
+
+      const momentButtons = Array.from(document.querySelectorAll(".moment-btn"));
+      const momentChoices = momentButtons.filter((button) => !button.dataset.action);
+      const momentOutput = document.getElementById("moment-output");
+      const setMoment = (button) => {
+        momentButtons.forEach((btn) => btn.classList.remove("is-active"));
+        button.classList.add("is-active");
+        if (momentOutput) {
+          momentOutput.textContent = button.dataset.moment || "";
+        }
+      };
+      momentButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          if (button.dataset.action === "shuffle") {
+            const pick = momentChoices[Math.floor(Math.random() * momentChoices.length)];
+            if (pick) {
+              setMoment(pick);
+            }
+            return;
+          }
+          setMoment(button);
+        });
+      });
+    </script>
+  </body>
+</html>
